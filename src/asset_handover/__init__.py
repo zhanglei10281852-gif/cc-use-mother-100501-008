@@ -1,5 +1,61 @@
 """基础设施运营责任交接领域包。"""
 
-from .contracts import HandoverPackage, unique_by_identity
+from .contracts import HandoverPackage as ContractHandoverPackage
+from .contracts import unique_by_identity
+from .domain import (
+    AssetVersion,
+    AuditEvent,
+    ContractRevision,
+    Deduction,
+    Defect,
+    DefectStatus,
+    DomainError,
+    EmergencyContact,
+    ExpiryAction,
+    HandoverPackage,
+    Incident,
+    MaintenancePlan,
+    Obligation,
+    PackageState,
+    RemedyItem,
+    RemedyStatus,
+    RepairReport,
+    RepairStatus,
+    ResponsibilityLink,
+    Role,
+    ServiceMetric,
+    StateError,
+    WarrantyBoundary,
+    now_utc,
+)
+from .service import HandoverService
 
-__all__ = ["HandoverPackage", "unique_by_identity"]
+__all__ = [
+    "AssetVersion",
+    "AuditEvent",
+    "ContractHandoverPackage",
+    "ContractRevision",
+    "Deduction",
+    "Defect",
+    "DefectStatus",
+    "DomainError",
+    "EmergencyContact",
+    "ExpiryAction",
+    "HandoverPackage",
+    "HandoverService",
+    "Incident",
+    "MaintenancePlan",
+    "Obligation",
+    "PackageState",
+    "RemedyItem",
+    "RemedyStatus",
+    "RepairReport",
+    "RepairStatus",
+    "ResponsibilityLink",
+    "Role",
+    "ServiceMetric",
+    "StateError",
+    "WarrantyBoundary",
+    "now_utc",
+    "unique_by_identity",
+]

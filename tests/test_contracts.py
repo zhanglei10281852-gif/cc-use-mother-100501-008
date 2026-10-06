@@ -2,7 +2,7 @@
 
 import unittest
 
-from asset_handover import HandoverPackage, unique_by_identity
+from asset_handover.contracts import HandoverPackage, unique_by_identity
 
 
 class ContractTests(unittest.TestCase):
